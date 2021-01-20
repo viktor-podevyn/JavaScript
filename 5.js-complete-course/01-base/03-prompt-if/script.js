@@ -11,9 +11,13 @@
 
 (function() {
 
-  var birthday = ['Do you want some cake']
-    let yes = true
+  let answer = prompt('Do you want some cake?');
 
-    while True :
+    if (answer === "yes") {
+      alert("Congrats!");
+    } else {
+      alert("More cake for me then :p !")
+    }
+
 
 })();
