@@ -11,21 +11,24 @@
 
 (function() {
 
-    var fruits = [
-        "apple",
-        "pear",
-        "raspberry",
-        "tomatos",
-        "kiwi",
-        "banana",
-        "orange",
-        "mandarin",
-        "durian",
-        "peache",
-        "grap",
-        "cherry",
-    ];
+    document.getElementById("run").addEventListener("click", function () {
+        var fruits = [
+            "apple",
+            "pear",
+            "raspberry",
+            "tomatoes",
+            "kiwi",
+            "banana",
+            "orange",
+            "mandarin",
+            "durian",
+            "peache",
+            "grap",
+            "cherry",
+        ];
 
-    // your code here
+        alert(fruits[3] + " is the fourth item in the list.");
+
+    });
 
 })();
