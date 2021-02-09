@@ -28,6 +28,13 @@
         "cerise",
     ];
 
-    // your code here
+    document.getElementById('run').addEventListener('click', function (){
 
-})();
+        function removeDuplicates(fruits){
+            return[...new Set(fruits)]
+        }
+        console.log(new Set(fruits));
+    })
+
+
+    })();

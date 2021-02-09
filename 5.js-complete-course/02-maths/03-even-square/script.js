@@ -16,14 +16,12 @@
         let result = 0;
         let i = 1;
 
-        while (i <= 21) {
+        while (result <= 21) {
             result = Math.pow(i,2);
-            console.log(result);
-            if (i < 21) {
+            if (result < 21) {
                 i += 1;
                 alert (result);
             }
-            break;
         }
 
     });

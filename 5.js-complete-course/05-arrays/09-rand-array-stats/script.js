@@ -11,6 +11,31 @@
 
 (function() {
 
-    // your code here
+    document.getElementById("run").addEventListener("click",function(){
+
+        let numbers = [];
+
+        function randomNumber () {
+            return Math.floor(Math.random() * 100);
+        }
+
+        for (let i = 1; i < 11; i++) {
+            numbers.push(randomNumber());
+            document.getElementById("n-" + i).innerHTML = numbers[i - 1];
+        }
+
+
+        let min = Math.min(...numbers);
+        let max = Math.max(...numbers);
+        let sum = numbers.reduce((a, b) => a + b, 0);
+        let average = sum/numbers.length;
+
+        document.getElementById("min").innerHTML = min.toString();
+        document.getElementById("max").innerHTML = max.toString();
+        document.getElementById("sum").innerHTML = sum.toString();
+        document.getElementById("average").innerHTML = average.toString();
+
+    });
+
 
 })();
